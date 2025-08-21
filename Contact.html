@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - DailyDash</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background: #1e90ff;
+      padding: 15px 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .contact-info {
+      flex: 1;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-info h2 {
+      margin-bottom: 20px;
+      color: #1e90ff;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .contact-form {
+      flex: 1;
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #1e90ff;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    .contact-form button {
+      background: #1e90ff;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0b65c2;
+    }
+
+    .footer {
+  background: whitesmoke;
+  color: black;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 6px;
+}
+
+.footer-section.about p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section.links li {
+  margin: 8px 0;
+}
+.footer-section.links a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-section.links a:hover {
+  color: blue;
+}
+
+.footer-section.contact p {
+  margin: 6px 0;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  filter: darkness(0) invert(1);
+  transition: transform 0.2s;
+}
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 14px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    DailyDash Delivery - Contact Us
+  </header>
+
+  <div class="container">
+    <!-- Contact Information -->
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p><strong>📍 Address:</strong> Muzffarpur, Bihar, India</p>
+      <p><strong>📞 Phone:</strong> +91 8877754715</p>
+      <p><strong>📧 Email:</strong> officialharshvardhan024@gmail.com</p>
+      <p>We’re here to answer your queries and ensure your DailyDash experience is smooth and delightful.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form id="contactForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+     <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>
+        We provide top-notch services and solutions to make your life easier. 
+        Our mission is to deliver quality and build trust with our customers.
+      </p>
+    </div>
+
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h3>Contact</h3>
+      <p>Email: officialharshvardhan024@gmail.com</p>
+      <p>Phone: +91 8877754715</p>
+      <p>Location: Muzffarpur, India</p>
+    </div>
+
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+           <a href="#"><img src="https://www.freepnglogos.com/uploads/facebook-logo-icon/facebook-logo-icon-facebook-icon-png-images-icons-and-png-backgrounds-1.png" alt="Facebook"></a>
+           <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3AZ5JwF4J989bhdvZjqP-mPqGnfZstlxz_Q&s" alt="Twitter"></a>
+           <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5zQ42vVBoRGGYD7A6pKnIIRAT_G-cFVZbA&s" alt="Instagram"></a>
+           <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTllNbtXaEUaCuGkcHhD6Wqb7QzOD0KGeYgkw&s" alt="LinkedIn"></a>
+      </div>
+    </div>   
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 DailyDash . All rights reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    // Form validation & submission
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name === "" || email === "" || message === "") {
+        alert("⚠️ Please fill in all fields.");
+        return;
+      }
+
+      if (!/^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email)) {
+        alert("⚠️ Please enter a valid email address.");
+        return;
+      }
+
+      alert("✅ Thank you, " + name + "! Your message has been sent successfully.");
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+</body>
+</html>
